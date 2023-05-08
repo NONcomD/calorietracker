@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Product Details</title>
+</head>
+<body>
+<h1>Product Details</h1>
+<dl>
+    <dt>Product ID:</dt>
+    <dd th:text="${product.id}"></dd>
+    <dt>Product Name:</dt>
+    <dd th:text="${product.name}"></dd>
+    <dt>Product Protein:</dt>
+    <dd th:text="${product.protein}"></dd>
+    <dt>Product Carbohydrates:</dt>
+    <dd th:text="${product.carbs}"></dd>
+    <dt>Product Fat:</dt>
+    <dd th:text="${product.fat}"></dd>
+    <dt>Product Calories:</dt>
+    <dd th:text="${product.calories}"></dd>
+    <dt>Product Weight:</dt>
+    <dd th:text="${product.weight}"></dd>
+
+</dl>
+</body>
+</html>

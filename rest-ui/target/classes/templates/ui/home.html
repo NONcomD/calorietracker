@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h2>This is your home page</h2>
+
+<button><a th:href="@{/ui/products/new}">Create a product</a></button>
+
+
+<h2>Add Product to Breakfast</h2>
+<form method="post" th:action="@{/breakfasts}">
+    <label for="id">Select Product:</label>
+    <select id="id" name="name">
+        <option th:each="product : ${products}" th:value="${product.id}" th:text="${product.name}"></option>
+    </select>
+    <br><br>
+    <button type="submit">Add to Breakfast</button>
+    <br><br>
+</form>
+
+
+</body>
+</html>

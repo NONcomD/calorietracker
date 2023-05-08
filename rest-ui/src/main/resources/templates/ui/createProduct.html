@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Product</title>
+</head>
+<body>
+<h2>Create Product</h2>
+
+<form method="post" th:action="@{/ui/products/new}" th:object="${product}">
+    <div>
+        <label>Name:</label>
+        <input type="text" name="name" required>
+    </div>
+    <div>
+        <label>Carbs:</label>
+        <input type="number" step="1" name="carbs" required>
+    </div>
+    <div>
+        <label>Protein:</label>
+        <input type="number" step="1" name="protein" required>
+    </div>
+    <div>
+        <label>Fat:</label>
+        <input type="number" step="1" name="fat" required>
+    </div>
+    <div>
+        <label>Weight:</label>
+        <input type="number" step="1" name="weight" required>
+    </div>
+    <div>
+        <label>Calories:</label>
+        <input type="number" step="1" name="calories" required>
+    </div>
+    <button type="submit" >Create</button>
+</form>
+</body>
+</html>
