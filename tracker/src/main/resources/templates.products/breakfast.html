@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Product to Breakfast</title>
+</head>
+<body>
+<h2>Add Product to Breakfast</h2>
+<form method="post" th:action="@{/add-to-breakfast/{id}(id=${id})}">
+    <label for="id">Product ID:</label>
+    <input type="text" id="id" name="id" required/>
+
+    <button type="submit">Add to Breakfast</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,6 @@
+com/calorie/tracker/product/Products.class
+com/calorie/tracker/product/Product.class
+com/calorie/tracker/product/ProductController.class
+com/calorie/tracker/TrackerApplication.class
+com/calorie/tracker/product/ProductRepository.class
+com/calorie/tracker/product/ProductService.class
